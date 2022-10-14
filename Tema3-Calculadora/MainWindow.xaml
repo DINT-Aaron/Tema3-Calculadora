@@ -6,6 +6,14 @@
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
         Title="Calculadora" Icon="assets/128.ico" MinWidth="250" MinHeight="350" Height="450" Width="800">
+    
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5"></Setter>
+            <EventSetter Event="Click" Handler="Button_Click"></EventSetter>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -23,52 +31,52 @@
             </Viewbox>
         </Border>
         <UniformGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Rows="3" Columns="3">
-            <Button Tag="1" Click="Button_Click" Margin="5">
+            <Button Tag="1">
                 <Viewbox>
                     <TextBlock>1</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="2" Click="Button_Click" Margin="5">
+            <Button Tag="2">
                 <Viewbox>
                     <TextBlock>2</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="3" Click="Button_Click" Margin="5">
+            <Button Tag="3">
                 <Viewbox>
                     <TextBlock>3</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="4" Click="Button_Click" Margin="5">
+            <Button Tag="4">
                 <Viewbox>
                     <TextBlock>4</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="5" Click="Button_Click" Margin="5">
+            <Button Tag="5">
                 <Viewbox>
                     <TextBlock>5</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="6" Click="Button_Click" Margin="5">
+            <Button Tag="6">
                 <Viewbox>
                     <TextBlock>6</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="7" Click="Button_Click" Margin="5">
+            <Button Tag="7">
                 <Viewbox>
                     <TextBlock>7</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="8" Click="Button_Click" Margin="5">
+            <Button Tag="8">
                 <Viewbox>
                     <TextBlock>8</TextBlock>
                 </Viewbox>
             </Button>
-            <Button Tag="9" Click="Button_Click" Margin="5">
+            <Button Tag="9">
                 <Viewbox>
                     <TextBlock>9</TextBlock>
                 </Viewbox>
             </Button>
         </UniformGrid>
-        <Button Tag="0" Click="Button_Click" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" FontSize="30" >0</Button>
+        <Button Tag="0" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" >0</Button>
     </Grid>
 </Window>
